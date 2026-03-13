@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="admin_.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>Add post</h1>
+
+        <form>
+
+            <div class="form-row">
+                <label>Title:</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Slug:</label>
+                <input type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Body:</label>
+                <textarea></textarea>
+            </div>
+
+            <div class="form-row">
+                <label>Author:</label>
+                <input class="small-input" type="text">
+            </div>
+
+            <div class="form-row">
+                <label>Publish:</label>
+
+                <div>
+                    <div class="publish-row">
+                        <div>
+                            Date:<br>
+                            <input class="small-input" type="date">
+                        </div>
+
+                        <div>
+                            Time:<br>
+                            <input class="small-input" type="time">
+                        </div>
+                    </div>
+
+                    <div class="note">
+                        Note: You are 5.5 hours ahead of server time.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-row">
+                <label>Status:</label>
+
+                <select>
+                    <option>Draft</option>
+                    <option>Published</option>
+                </select>
+
+            </div>
+
+            <div class="buttons">
+
+                <button type="submit">SAVE</button>
+
+                <button type="submit">Save and add another</button>
+
+                <button type="submit">Save and continue editing</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

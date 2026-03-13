@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arduino Boards Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="">
+
+    <header>
+        <h1>Arduino Boards Information</h1>
+        <p>Learn about different Arduino boards and choose the best one for your project.</p>
+        <hr>
+    </header>
+
+    
+    <section>
+        <h2>About Arduino</h2>
+        <p>
+            Arduino is an open-source electronics platform based on easy-to-use hardware and software.
+            It is widely used for building electronics and robotics projects.
+        </p>
+        <hr>
+    </section>
+
+    
+    <section>
+        <h2>Types of Arduino Boards</h2>
+
+        <h3>Arduino Uno</h3>
+        <img src="image_Uno.png" height="200px">
+        <ul>
+            <li>Microcontroller: ATmega328P</li>
+            <li>Digital Pins: 14</li>
+            <li>Analog Pins: 6</li>
+        </ul>
+
+        <h3>Arduino Mega 2560</h3>
+        <img src="image_mega.png" height="200px">
+        <ul>
+            <li>Microcontroller: ATmega2560</li>
+            <li>Digital Pins: 54</li>
+            <li>Analog Pins: 16</li>
+        </ul>
+        
+        <h3>Arduino Nano</h3>
+            <img src="image_nano.png" height="200px">
+        <ul>
+            <li>Compact size</li>
+            <li>Used for small projects</li>
+        </ul>
+       
+        <hr>
+    </section>
+
+    
+    <section>
+        <h2>Comparison Table</h2>
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Board</th>
+                <th>Digital Pins</th>
+                <th>Analog Pins</th>
+            </tr>
+            <tr>
+                <td>Uno</td>
+                <td>14</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Mega 2560</td>
+                <td>54</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Nano</td>
+                <td>14</td>
+                <td>8</td>
+            </tr>
+        </table>
+
+        <hr>
+    </section>
+
+    
+    <section>
+        <h2>Arduino Interest Form</h2>
+
+        <form>
+
+           
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname" placeholder="Enter your name"><br><br>
+
+            
+            <label>Email:</label><br>
+            <input type="email" name="email" placeholder="Enter your email"><br><br>
+
+            
+            <label>Which Arduino board do you prefer?</label><br>
+            <input type="radio" name="board" value="uno"> Arduino Uno<br>
+            <input type="radio" name="board" value="mega"> Arduino Mega<br>
+            <input type="radio" name="board" value="nano"> Arduino Nano<br><br>
+
+            
+            <label>What will you use Arduino for?</label><br>
+            <input type="checkbox" name="purpose" value="robotics"> Robotics<br>
+            <input type="checkbox" name="purpose" value="iot"> IoT<br>
+            <input type="checkbox" name="purpose" value="home"> Home Automation<br><br>
+
+            
+            <label>Your Skill Level:</label><br>
+            <select name="level">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select><br><br>
+
+            
+            <label>Any Comments:</label><br>
+            <textarea rows="4" cols="40" placeholder="Write your feedback here"></textarea><br><br>
+
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </form>
+
+        <hr>
+    </section>
+
+    <footer>
+        <p>Created by:Aryan</p>
+    </footer>
+
+</body>
+</html>

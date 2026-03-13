@@ -1,0 +1,21 @@
+#img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#imge{
+    height: 250px;
+    border: 20px;
+    border-color: black;
+    border-radius: 7%;
+}
+#table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fill{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

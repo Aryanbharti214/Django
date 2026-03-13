@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog List</title>
+</head>
+<body>
+
+    <h1>Blog List</h1>
+
+    {% if blog %}
+        <ul>
+            {% for s in blog %}
+                <li>
+                    <h3>{{ s.title }}</h3>
+                    <p><strong>Slug:</strong> {{ s.slug }}</p>
+                    <p><strong>Published:</strong> {{ s.publish }}</p>
+                    <p><strong>Created:</strong> {{ s.created }}</p>
+                    <p><strong>Updated:</strong> {{ s.updated}}</p>
+                    <p>{{ s.body }}</p>
+                </li>
+                <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No blog posts available.</p>
+    {% endif %}
+
+</body>
+</html>

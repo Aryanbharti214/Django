@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog List</title>
+    <link rel="stylesheet" href="{% static 'blog/css/style2.css' %}">
+    
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Title List</h1>
+
+
+        <h3><u>{{post.title}}</u></h3>
+        <p>{{post.body}}</p>
+
+
+    </div>
+
+</body>
+
+</html>

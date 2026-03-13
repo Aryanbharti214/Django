@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog List</title>
+   
+</head>
+<body>
+
+    <h1>Blog List</h1>
+
+    {% if blog %}
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Slug</th>
+                    <th>Published</th>
+                    <th>Created</th>
+                    <th>Updated</th>
+                    <th>Body</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for s in blog %}
+                <tr>
+                    <td>{{ s.title }}</td>
+                    <td>{{ s.slug }}</td>
+                    <td>{{ s.publish }}</td>
+                    <td>{{ s.created }}</td>
+                    <td>{{ s.updated }}</td>
+                    <td>{{ s.body }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No blog posts available.</p>
+    {% endif %}
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
