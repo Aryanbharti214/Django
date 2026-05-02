@@ -1,0 +1,1 @@
+what is syntax to add atgs fields

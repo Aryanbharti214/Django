@@ -1,0 +1,29 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+
+<h2>{{ post.title }}</h2>
+
+<p>
+    Author: {{ post.author }}
+</p>
+
+<p>
+    Published: {{ post.publish }}
+</p>
+
+<p>
+    {{ post.body }}
+</p>
+
+<p>
+    <a href="{% url 'blog:post_share' post.id %}">
+        Share this post
+    </a>
+</p>
+
+<br>
+
+<a href="/">Back to Blog</a>
+
+{% endblock %}
